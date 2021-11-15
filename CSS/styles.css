@@ -23,6 +23,7 @@
   --icon-team-cont-accent: #ffffff;
   --icon-footer-ellipse: rgba(255, 255, 255, 0.1);
   --img-descr-overlay: rgba(47, 48, 58, 0.8);
+  --modal-btn: #188ce8;
   --gap: 30px;
   --item: 1;
 }
@@ -537,12 +538,73 @@ img {
   transition: background-color 250ms ease;
 }
 .footer-socials-link:hover,
-.footer-social-link:focus {
+.footer-socials-link:focus {
   background-color: var(--logo-specific-color);
 }
 .footer-socials-icon {
   width: 20px;
   height: 20px;
+}
+/* Follow-us-form */
+.follow-us-title {
+  margin: 0;
+  margin-bottom: 20px;
+  color: var(--icon-team-cont-accent);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.follow-us {
+  margin-left: 93px;
+  padding-top: 12px;
+}
+.follow-us-form input {
+  margin-right: 12px;
+}
+.follow-btn {
+  width: 200px;
+  height: 50px;
+  background-color: var(--logo-specific-color);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  letter-spacing: 0.06em;
+  color: var(--icon-team-cont-accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-form {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+.follow-us-form input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  padding-left: 15px;
+  background-color: var(--footer-color);
+}
+.follow-us-form label {
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+.follow-us-form {
+  display: flex;
 }
 
 /* Portfolio.html */
@@ -693,4 +755,129 @@ img {
 
 .overlay-img-port:hover .overlay-title {
   transform: translatey(0);
+}
+/* Modal window */
+.modal-form-box {
+}
+.modal {
+  padding: 40px 40px;
+}
+.modal-form-label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  height: 58px;
+}
+.icon-modal {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 30px;
+  left: 12px;
+  /* transform: translate(-50%, -50%); */
+}
+
+.icon-modal:hover {
+  fill: var(--logo-specific-color);
+}
+.modal-form-label label {
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.17;
+
+  letter-spacing: 0.01em;
+}
+.modal-title {
+  margin: 0;
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--main-text-color);
+}
+.modal-form-label input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+
+  border-radius: 4px;
+  height: 40px;
+  padding-left: 30px;
+  border-bottom-color: none;
+}
+.modal-form-label:hover label,
+.modal-form-label:focus label {
+  color: var(--logo-specific-color);
+  border-color: var(--logo-specific-color);
+}
+.modal-form-label:hover input,
+.modal-form-label:focus input {
+  border-color: var(--logo-specific-color);
+}
+.modal-form-label:hover .icon-modal .modal-form-label:focus .icon-modal {
+  fill: var(--logo-specific-color);
+}
+
+/* Modal submit button */
+.btn-modal {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  display: block;
+  margin: 0 auto;
+  letter-spacing: 0.06em;
+  min-width: 200px;
+  min-height: 50px;
+  color: var(--icon-team-cont-accent);
+  border-color: transparent;
+  padding: 10px 54px;
+  text-align: center;
+  cursor: pointer;
+  background: var(--modal-btn);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.modal-form-textarea {
+  width: 448px;
+  height: 138px;
+  margin-bottom: 20px;
+}
+textarea {
+  display: flex;
+  flex-direction: row;
+  /* width: 448 px;
+  height: 120 px; */
+  resize: none;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+
+  border-radius: 4px;
+}
+.modal-form-textarea label {
+  margin-bottom: 4px;
+}
+
+.policy {
+  margin-bottom: 30px;
+  color: var(--secondary-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.policy-link {
+  position: relative;
+  color: var(--logo-specific-color);
+}
+.policy-link.link::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: var(--logo-specific-color);
 }
