@@ -381,13 +381,15 @@
             <use href="./images/portfolio/icons/cross.svg#cross"></use>
           </svg>
         </button>
-        <form>
-          <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+
+        <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+        <form action="#" class="form-wrap">
           <div class="modal-form-box">
             <div class="modal-form-label">
               <label for="username" class="modal-label">Имя</label>
-              <input type="text" name="name" id="username" />
-              <span>
+              <span class="input-form">
+                <input type="text" name="name" id="username" />
+
                 <svg class="icon-modal">
                   <use href="./images/sprite.svg#name-form"></use>
                 </svg>
@@ -396,8 +398,9 @@
 
             <div class="modal-form-label">
               <label for="phone" class="modal-label">Телефон</label>
-              <input type="tel" name="phone" id="phone" />
-              <span>
+              <span class="input-form">
+                <input type="tel" name="phone" id="phone" />
+
                 <svg class="icon-modal">
                   <use href="./images/sprite.svg#phone-form"></use>
                 </svg>
@@ -405,28 +408,33 @@
             </div>
             <div class="modal-form-label">
               <label for="email" class="modal-label">Почта</label>
-              <input type="mail" name="email" id="email" />
-              <span>
+              <span class="input-form">
+                <input type="mail" name="email" id="email" />
+
                 <svg class="icon-modal">
                   <use href="./images/sprite.svg#email-form"></use>
                 </svg>
               </span>
             </div>
 
-            <div class="modal-form-textarea">
+            <div class="modal-form-label">
               <label for="textarea" class="modal-label">Комментарий</label>
-              <textarea
-                name="textarea"
-                id="textarea"
-                rows="5"
-                cols="50"
-                placeholder="Введите текст"
-              ></textarea>
+              <textarea name="textarea" id="textarea" placeholder="Введите текст"></textarea>
             </div>
             <div class="policy">
-              <input type="checkbox" name="policy" id="policy" />
-              <label for="policy"
-                >Соглашаюсь с рассылкой и принимаю
+              <input
+                type="checkbox"
+                name="policy"
+                id="policy"
+                class="input-check visually-hidden"
+              />
+              <label for="policy" class="checkbox-label">
+                <span class="checkbox-icon-wrap">
+                  <svg class="checkbox-icon">
+                    <use href="./images/sprite.svg#checkbox"></use>
+                  </svg>
+                </span>
+                Соглашаюсь с рассылкой и принимаю
                 <a href="" class="policy-link link">Условия договора</a>
               </label>
             </div>
