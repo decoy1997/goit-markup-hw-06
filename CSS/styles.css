@@ -322,6 +322,7 @@ img {
   position: absolute;
   margin: 0;
   color: var(--icon-team-cont-accent);
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   align-items: center;
@@ -563,12 +564,16 @@ img {
 .follow-us-form input {
   margin-right: 12px;
 }
+.follow-us-form input {
+  color: var(--icon-team-cont-accent);
+  font-size: 14px;
+  line-height: 1.14;
+}
 .follow-btn {
   width: 200px;
   height: 50px;
   background-color: var(--logo-specific-color);
-
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid transparent;
   border-radius: 4px;
 
   font-weight: 700;
@@ -713,7 +718,8 @@ img {
   height: 18px;
   justify-content: center;
   align-items: center;
-  color: #000;
+  fill: var(--logo-black);
+  transition: fill 250ms ease;
 }
 .close-modal {
   position: absolute;
@@ -728,7 +734,10 @@ img {
   align-items: center;
   background-color: var(--icon-team-cont-accent);
 }
-
+.close-modal:hover .modal-cross,
+.close-modal:focus .modal-cross {
+  fill: var(--logo-specific-color);
+}
 .overlay-img-port {
   position: relative;
   overflow: hidden;
@@ -793,7 +802,7 @@ img {
 .modal-label {
   display: block;
   margin-bottom: 4px;
-
+  color: var(--secondary-text-color);
   font-size: 12px;
   line-height: 1.17;
 
@@ -856,8 +865,11 @@ textarea {
   resize: none;
   outline: none;
 }
-.modal-form-textarea label {
-  margin-bottom: 4px;
+::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
 }
 
 .policy {
@@ -880,9 +892,7 @@ textarea {
   height: 1px;
   background-color: var(--logo-specific-color);
 }
-.checkbox-icon-wrap {
-  /* position: relative; */
-}
+
 .checkbox-icon {
   /* position: absolute; */
   top: 0;
@@ -892,6 +902,7 @@ textarea {
 }
 .checkbox-label {
   position: relative;
+  padding-left: 36px;
 }
 .checkbox-icon-wrap {
   width: 15px;
@@ -905,7 +916,7 @@ textarea {
 
   position: absolute;
   top: 0;
-  left: -18px;
+  left: 0;
 }
 .visually-hidden {
   position: absolute;
