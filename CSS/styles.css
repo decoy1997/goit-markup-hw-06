@@ -895,8 +895,8 @@ textarea {
 
 .checkbox-icon {
   /* position: absolute; */
-  top: 0;
-  left: 0;
+  /* top: 0;
+  left: 0; */
   width: 11px;
   height: 8px;
 }
@@ -916,7 +916,7 @@ textarea {
 
   position: absolute;
   top: 0;
-  left: 0;
+  left: 13px;
 }
 .visually-hidden {
   position: absolute;
